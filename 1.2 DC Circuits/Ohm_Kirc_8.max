@@ -1,0 +1,22 @@
+*Añadido 470 y 100 ohmios para poder comprobar teorema de maxima potencia *con 1k+1k ; 1k+10k ;1k+470 ; 1k+100
+VDC+25V_1       F	max:20	imax:0.5
+VDCCOM_1	0
+
+SHORTCUT_S1  F A
+SHORTCUT_S2  B E
+SHORTCUT_S3  G I
+SHORTCUT_S4  B D
+SHORTCUT_S5  D H
+SHORTCUT_S6  I 0
+SHORTCUT_S7  D G
+
+R_R1  A B  1k  
+R_R2  A B  10k
+
+R_R3  E G  1k  
+R_R4  E G  10k
+
+R_R7  H I  1k  
+R_R8  H I  10k
+R_R9  E G  470
+R_R10 D E  100

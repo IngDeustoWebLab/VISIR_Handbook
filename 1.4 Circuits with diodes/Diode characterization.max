@@ -1,0 +1,14 @@
+*Practica con resistencia + diodo
+VDC+25V_1	F	max:20	imax:0.5
+VDCCOM_1	0
+
+VFGENA_FGENA1	A 0	max:5
+
+R_R1	        A B 1k
+R_R2	        A B 10k
+D_D1		B C 1N4007
+D_D1		C B 1N4007
+
+SHORTCUT_S1    C H
+SHORTCUT_S2    H 0
+SHORTCUT_S3    F A

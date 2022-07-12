@@ -1,0 +1,116 @@
+* All components are defined as, <type>_<card>_<place>
+* supported types are:
+* SHORTCUT
+* R, L, C
+* VFGENA
+
+***********************************************************************
+* CARD 1 and 2 are reserved for oscilloscope, fgen and dmm switch cards!
+************************************************************************
+
+*special nodes, DO NOT CHANGE
+
+* Instrument card
+VFGENA_24_1          	A 0
+
+VDC-25V_24_5:1_11 	G
+VDC+25V_24_4:7_14	F
+VDC+6V_24_3:3_11	E
+VDCCOM_24_2		0
+
+* RECTIFIERS COMPONENTS
+C_2_1	G I 0.1u    *C3
+C_2_2	G I 1u      *C4
+C_2_9	G I 10u     *C5
+
+D_2_3	B C 1N4007   *D1
+D_2_10	C B 1N4007   *D2
+D_9_10	E D 1N4007   *D3
+R_4_9   C 0 1k
+
+D_3_10	C B 1N4148   * catodo - anodo
+D_3_3	C B OA90     * catodo - anodo
+
+R_4_2	H I 6_25W	*Resistencia de 6ohm y 25W
+
+
+
+* OHM AND KIRCHHOFF CIRCUITS
+R_7_10  A B 1k          *R1
+R_7_9   A B 10k         *R2
+R_7_2   C D 1k          *R3
+R_7_3   C D 10k         *R4
+R_8_3 	E G 1k          *R5
+R_8_10  E G 10k         *R6
+R_8_1   H I 1k          *R7
+R_8_8   H I 10k         *R8
+
+SHORTCUT_8_11   F C     *S1
+SHORTCUT_8_5    C G     *S2
+SHORTCUT_7_11	D 0     *S3
+SHORTCUT_7_4    I 0     *S4
+SHORTCUT_8_14   A C     *S5
+SHORTCUT_7_5    B E     *S6
+SHORTCUT_7_12   G I     *S7
+SHORTCUT_8_12   D H     *S8
+SHORTCUT_8_6    B D     *S9
+SHORTCUT_8_13   E H     *S10
+SHORTCUT_7_13   D G     *S11
+SHORTCUT_8_4    F H     *S12
+SHORTCUT_7_6    C H     *S13
+SHORTCUT_8_7    F A     *S14
+SHORTCUT_7_7    C 0     *S15
+SHORTCUT_2_12   B G     *S16
+SHORTCUT_4_12   A H     *S17
+SHORTCUT_4_11   C I    *S18
+SHORTCUT_1_4    H 0    *S19
+SHORTCUT_5_5    A B    *S20
+SHORTCUT_4_4    A G    *S21
+SHORTCUT_5_4    D E    *S22
+SHORTCUT_4_5    C E    *S23
+SHORTCUT_4_6    E G    *S24
+SHORTCUT_6_13   F I    *S25
+
+
+R_3_1	G D 1k     
+R_5_13	G D 10k  
+
+*ZENER CIRCUITS
+
+D_3_9	E I Z5.1V      *Z1  catode - anode E I
+R_8_2	A C 470        *R12
+
+*OPERATIONAL AMPLIFIERS
+C_1_1   B D 2n2    
+C_1_10  C D 2n2    
+
+R_1_2   C D 100k   
+R_1_3   C D 68k    
+R_1_9   C D 39k    
+
+R_4_1   H D 1k 
+R_4_8   E I 100k 
+R_4_3   H E 1k 
+C_4_10  H E 0.1u   
+C_9_3   H E 10u    
+
+OP_1_14:1_7:1_8:1_12	NC1 D E G NC2 C F NC3 uA741
+
+*BJT CIRCUIT
+C_6_3  A C 10u    *C8
+C_6_1  B 0 10u    *C9
+C_6_2  H I 10u    *C10
+
+R_6_11 F C 5.6k    *R13
+R_6_10 I H 820     *R14
+R_6_9  G 0 220     *R15
+R_6_8  E G 470     *R16
+R_3_2  G 0 100 
+
+R_10_2  H F 820     *R14
+
+*R_9_10 C D 5.6k 
+*R_2_13 C D 100 
+
+Q_6_6:6_7:6_14  H E B BC547C
+

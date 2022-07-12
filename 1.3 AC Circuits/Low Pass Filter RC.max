@@ -1,0 +1,17 @@
+*Actualizado para poder medir la corriente al comienzo de cada rama
+*08062020
+
+VFGENA_FGENA1	A 0	max:5
+
+
+SHORTCUT_S1 	A C
+SHORTCUT_S2 	C G
+
+C_C1	G I 1u
+C_C2	G I 10u
+C_C3	G I 0.1u
+
+R_R1	H I 1k
+R_R2    H I 10k
+
+SHORTCUT_S1	H 0

@@ -1,0 +1,25 @@
+VDC+25V_1       F	max:20	imax:0.5
+VDCCOM_1	0
+
+VFGENA_FGENA1	A 0	max:5
+
+SHORTCUT_S1  F A
+SHORTCUT_S2  B E
+SHORTCUT_S3  G I
+SHORTCUT_S4  E H
+SHORTCUT_S5  D H
+SHORTCUT_S6  C G
+SHORTCUT_S7  I 0
+
+
+R_R1  A B  1k  
+R_R2  A B  10k
+
+R_R3  E G  1k  
+R_R4  E G  10k
+
+R_R5  C D  1k  
+R_R6  C D  10k
+
+R_R7  H I  1k  
+R_R8  H I  10k
