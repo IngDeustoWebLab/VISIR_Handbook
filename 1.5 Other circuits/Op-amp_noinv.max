@@ -1,0 +1,21 @@
+VFGENA_FGENA1	A 0	max:5
+VDC+25V_1	F	max:15	imax:0.5
+VDC-25V_2	G	max:-15	imax:0.5
+VDCCOM_1	0
+
+OP_1 		NC1 D E G NC2 C F NC3 uA741
+
+
+R_R1  C D  10k
+R_R2  C D  39k
+R_R3  C D  68k
+R_R4  C D  100k
+R_R5  C D  1k
+
+R_R6  H I  10k
+
+SHORTCUT_S1  D H
+SHORTCUT_S2  I 0
+SHORTCUT_S3  A B
+SHORTCUT_S4  B E
+
